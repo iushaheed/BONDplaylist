@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.bondtech.bondplayer.MainActivity"
+    >
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/player"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:gravity="bottom"
+        >
+
+        <TextView
+            android:id="@+id/whats_next_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WHAT'S NEXT ?"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:background="#000"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/this_is_next"
+            android:layout_below="@id/whats_next_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="this is next"
+            android:gravity="center"
+            android:background="#C70039"
+            android:textColor="#fff"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
