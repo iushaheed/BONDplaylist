@@ -22,25 +22,12 @@
         android:gravity="bottom"
         >
 
-        <TextView
-            android:id="@+id/whats_next_id"
+        <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="WHAT'S NEXT ?"
-            android:gravity="center"
-            android:textColor="#fff"
-            android:background="#000"
-            android:layout_gravity="center"/>
-        <TextView
-            android:id="@+id/this_is_next"
-            android:layout_below="@id/whats_next_id"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="this is next"
-            android:gravity="center"
-            android:background="#C70039"
-            android:textColor="#fff"
-            android:layout_weight="1"/>
+            android:text="show list"
+            android:onClick="showPlayList"
+            />
 
     </LinearLayout>
 
