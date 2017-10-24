@@ -136,10 +136,14 @@ public class MainActivity extends YouTubeBaseActivity {
     }
 
     private String linkToID(String link) {
-        String[] parts = link.split("=");
-        String id = parts[1].substring(0,11);
-        Log.v("LinktoID",id);
-        Log.v("LinktoIDlength",id.length()+"");
+        String id;
+        if(link.contains(".be")){
+            String[] parts = link.split(".be/");
+            id = parts[1].substring(0,11);
+        }else {
+            String[] parts = link.split("=");
+            id = parts[1].substring(0,11);
+        }
         return id;
     }
 
