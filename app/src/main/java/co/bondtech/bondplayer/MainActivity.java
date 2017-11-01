@@ -67,9 +67,7 @@ public class MainActivity extends YouTubeBaseActivity {
                     public void onInitializationFailure(YouTubePlayer.Provider provider,YouTubeInitializationResult youTubeInitializationResult) {
                         Toast.makeText(MainActivity.this, "Youtube Failed!", Toast.LENGTH_SHORT).show();
                     }
-
                 });
-
     }
 
     private void loadList() {
